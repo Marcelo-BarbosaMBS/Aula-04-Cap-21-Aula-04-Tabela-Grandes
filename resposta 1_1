@@ -1,0 +1,172 @@
+resposta 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 850px;
+            border-collapse: collapse ;            
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 20px;
+        
+        background-color: rgb(255, 255, 255);
+            color: rgb(3, 3, 3);
+        }
+
+        thead > tr > th {            
+            position: sticky; 
+            top: 0; 
+            background-color: rgb(255, 255, 255);
+
+        }
+        td.num {
+            text-align: right;
+        }
+        caption {
+            
+            font-size: 1.5em;
+           
+            font-weight: bold;
+            
+            padding: 10px;
+            
+            background-color: rgb(78, 78, 78);
+
+        }
+        
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(255, 254, 254);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+  
+    <table>
+        <caption>
+            População dos Estados Brasileiros-2024
+        </caption>
+        <thead>
+            <tr>
+            
+                <th scope="col" align="left">Estado</th>
+                <th scope="col" style="width: 100px" align="center">População</th> 
+                <th scope="col" align="center">Comando HTML</th>
+               
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Acre</strong></td>
+                <td class="num"><mark>830.018</mark></td>
+                <td>'Negrito' e '<mark>Destacado</mark>'</td>
+            </tr>
+            <tr>
+                <td><em>Alagoas</em></td>
+                <td class="num">3.365.351</td>
+                <td>'Itálico' </td>
+            </tr>
+            <tr>
+                <td><ins>Amapá</ins></td>
+                <td class="num">877.613</td>
+                <td>'Texto sublinhado'</td>
+            </tr>
+            <tr>
+                <td><del>Amazonas</del></td>
+                <td class="num"><u>4.269.995</u></td>
+                <td>'Texto riscado e Texto sublinhado'</td>
+            </tr>
+            <tr>
+                <td><sup>Bahia</sup></td>
+                <td class="num">14.141.626</td>
+                <td>'Texto sobrescrito'</td>
+            </tr>
+            <tr>
+                <td><abbr title="Ceara">CE</abbr></td>
+                <td class="num">9.240.580</td>
+                <td>'Abreviação'</td>
+            </tr>
+            <tr>
+                <td><strong>Distrito Federal</strong></td>
+                <td class="num">3.098.883</td>
+                <td><strong>'Texto em negrito'</strong></td>
+            </tr>    
+            <tr>
+                <td><q>Espirito Santo</q></td>
+                <td class="num">4.108.508</td>
+                <td>"Citição curta"</td>
+            </tr>
+            <tr>
+                <td><font face="viewport">Goias</font></td>
+                <td class="num">7.206.589</td>
+                <td>`Citição de fonte`</td>
+            </tr>
+             <tr>
+                <td>Maranhão</td>
+                <td>6.775.805</td>
+                <td>'Texto monoespaçado'</td>
+            </tr>
+             <tr>
+                <td align='left'><blockquote>Mato Grosso</blockquote></align></td>
+                <td>3.658.813</td>
+                <td>'Texto preformatado'</td>
+            </tr>
+            <tr>
+                <td><small>Paraíba</small></td>
+                <td>4.059.905</td>
+                <td>'Texto pequeno'</td>                
+            </tr> 
+            <tr>                    
+                <td><sub>Piauí</sub></td>
+                <td>3.281.480</td>
+                <td>'Texto subscrito'</td>
+            </tr>
+            <tr>
+                <td align="center"><blockquote>Rio de Janeiro</blockquote></td>
+                <td>6.054.524</td>
+                <td align="center">'Citação em bloco'</td>
+            </tr>
+            <tr>
+                <td><strong>Rio Grande do Sul</strong></td>            
+                <td>10.882.965</td>
+                <td>'Negrito'</td>
+            </tr>
+            <tr>
+                <td><em>Rondônia</em></td>
+                <td>1.616.379</td>
+                <td>'Itálico'</td>
+            </tr>
+            <tr>
+                <td><mark>Roraima</mark></td>
+                <td>636.707</td>
+                <td>'Texto Destacado'</td>
+            </tr>
+            <tr>
+                <td><abbr title="Tocantins">TO</abbr></td>
+                <td>1.607.363</td>
+                <td>'Abreviação'</td>
+            </tr>
+        </tbody>
+        <tfoot>            
+            <tr>
+                <th scope="row" align="left"><strong>Total de Habitantes</strong></th>
+                <td class="num"><strong>122.420.654</strong></td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+        
+</body>
+</html>
